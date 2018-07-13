@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListMember">
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="10"
+        android:background="@color/colorPrimaryDark"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Data Member"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtViewNama"
+        android:layout_width="92dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="74dp"
+        android:text="Nama Lengkap"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtTextNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtViewNama"
+        android:layout_alignEnd="@+id/buttonSave"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nama Lengkap" />
+
+    <TextView
+        android:id="@+id/txtViewJenisKel"
+        android:layout_width="95dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/txtViewNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="145dp"
+        android:textSize="18dp"
+        android:text="Jenis Kelamin" />
+
+    <EditText
+        android:id="@+id/edtTextJenisKel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtTextNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Jenis Kelamin" />
+
+    <TextView
+        android:id="@+id/txtViewTempatLhr"
+        android:layout_width="95dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/txtViewNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="210dp"
+        android:textSize="18dp"
+        android:text="Tempat Lahir" />
+
+    <EditText
+        android:id="@+id/edtTextTempatLhr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtTextNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="209dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tempat Lahir" />
+
+    <TextView
+        android:id="@+id/txtViewTglLahir"
+        android:layout_width="95dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/txtViewNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="276dp"
+        android:text="Tanggal Lahir"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtTextTglLahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtTextNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="276dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Tanggal Lahir" />
+
+    <TextView
+        android:id="@+id/txtViewAlamat"
+        android:layout_width="95dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/txtViewNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="342dp"
+        android:text="Alamat Lengkap"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtTextAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_alignStart="@+id/edtTextNama"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="342dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Alamat" />
+
+</RelativeLayout>
